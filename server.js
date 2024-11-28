@@ -19,8 +19,8 @@ app.get('/get',(req,res)=>{
 
 var server = http.createServer(app);
 
-server.listen(8000,()=>{
-	console.log(`http://localhost:8000`)
+server.listen(5000,()=>{
+	console.log(`http://localhost:5000`)
 });
 
 var io = socketIO(server);
