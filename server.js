@@ -12,7 +12,7 @@ app.get("/", function(req, res){
 app.get("/view", function(req, res){
 	res.render("view.ejs");
 });
-app.get('/get',()=>{
+app.get('/get',(req,res)=>{
   res.json({name:"sarath"})
 })
 
