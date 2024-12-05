@@ -6,13 +6,13 @@ var isStarted = false;
 var localStream;
 var remoteStream;
 var room = prompt('Enter room name:');
-var pcConfig = turnConfig;
-console.log(pcConfig)
+// var pcConfig = turnConfig;
+// console.log(pcConfig)
 var count = 0
 var socket = io.connect()
 
 if (room) {
-  socket.emit('create or join', room)
+  socket.emit('create or join', room) 
 }
 
 socket.on('created', (room) => {

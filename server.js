@@ -9,7 +9,7 @@ app.use(express.static('public'))
 app.get("/", function(req, res){
 	res.render("index.ejs");
 });
-app.get("/view", function(req, res){
+app.get("/view", function(req, res){ 
 	res.render("view.ejs");
 });
 app.get('/get',(req,res)=>{
