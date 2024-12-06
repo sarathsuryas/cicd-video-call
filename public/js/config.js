@@ -3,11 +3,20 @@
 // }
 
  iceConfiguration = {
-  iceServers: [
-      {
-          urls: 'turn:perfet-pitch-service.site:3478',
-          username: 'sarath',
-          credential: 'Sarath@123'
-      }
-  ]
+
+    iceServers: [
+        {
+            urls: 'stun:stun.l.google.com:19302',
+        },
+         {
+        urls: [
+          'turn:turn.ix.tc:3478' + "?transport=udp",
+          'turn:turn.ix.tc:3478' + "?transport=tcp",
+        ],
+        username: 'guest',
+        credential:'password'
+      },
+  
+    ]
+  
 };
